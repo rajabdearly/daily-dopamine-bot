@@ -14,6 +14,6 @@ export interface RandomQuote {
     quote: string
 }
 export async function getRandomQuote() {
-    const data = (await client.get<RandomQuote>('random')).body
-    return data;
+    const data = (await client.get<RandomQuote>('random'))
+    return data.body;
 }
