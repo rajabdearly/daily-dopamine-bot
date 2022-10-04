@@ -2,7 +2,7 @@
   "name": "daily-dopamine-bot",
   "version": "1.0.0",
   "description": "get your daily dopamine with anime quotes",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "start": "node dist/index.js",
     "dev": "nodemon --watch 'src/**' --ext 'ts,json' --exec 'ts-node src/index.ts'",
@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
-    "got": "^12.5.1",
+    "got": "^11.8.5",
     "telegraf": "^4.10.0"
   },
   "devDependencies": {
